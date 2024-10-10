@@ -24,7 +24,7 @@ export class PaginaComponent  implements OnInit{
   }
 
   redireccion(){
-    this._router.navigate(['/formulario']);
+    this._router.navigate(['/pagina-de-pruebas', 'Jairo', 'Paniagua']);
   }
 
 }
