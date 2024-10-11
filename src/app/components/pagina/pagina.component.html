@@ -1,0 +1,12 @@
+<h1 class="subheader">página</h1>
+
+<div *ngIf="nombre && apellido">
+    <p>Nombre completo: {{nombre}} {{apellido}}</p>
+</div>
+
+<div *ngIf="!nombre || !apellido">
+    <p>No hay parametros por url</p>
+</div>
+
+
+<button (click)="redireccion()">LLevame al formulario</button>

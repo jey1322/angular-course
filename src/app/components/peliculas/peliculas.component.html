@@ -1,0 +1,22 @@
+<h1 class="subheader">Peliculas</h1>
+<h3>{{titulo}}</h3>
+<button (click)="cambiarTitulo()">Pulsame</button>
+<hr>
+
+<h2 class="subheader">Listado de peliculas</h2>
+<div id="articles" *ngIf="peliculas">
+    <article class="article-item" *ngFor="let pelicula of peliculas; let i = index;">
+        <div class="image-wrap">
+            <img src="{{pelicula.image}}" alt="{{pelicula.tittle}}">
+        </div>
+
+        <h2>{{i}} - {{pelicula.tittle}}</h2>
+        <span class="date">
+            hace 5 minutos
+        </span>
+        <a href="#">Leer mas</a>
+
+        <div class="clearfix"></div>
+
+    </article>
+</div>
